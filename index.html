@@ -82,7 +82,7 @@
       border: none;
       border-radius: 6px;
       padding: 0.6rem 1rem;
-      background: #22c55e;
+      background: red;
       color: #fff;
       font: inherit;
       font-weight: 500;
@@ -183,6 +183,7 @@
   <script>
     // Set today's date next to "Today"
     const todayDateSpan = document.getElementById("today-date");
+    todayDateSpan.style.color = "blue";
     const today = new Date();
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     todayDateSpan.textContent = today.toLocaleDateString(undefined, options);
